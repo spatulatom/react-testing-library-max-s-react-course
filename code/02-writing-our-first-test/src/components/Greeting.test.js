@@ -9,6 +9,6 @@ test('renders Hello World as a text', () => {
   // ... nothing
 
   // Assert
-  const helloWorldElement = screen.getByText('Hello World!');
+  const helloWorldElement = screen.getByText('Hello World!', { exact: false }); // casing wont matter
   expect(helloWorldElement).toBeInTheDocument();
 });
