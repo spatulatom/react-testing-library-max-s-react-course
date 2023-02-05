@@ -28,6 +28,7 @@ describe('Greeting component', () => {
 
     // Act
     const buttonElement = screen.getByRole('button');
+    // we can also select button getByText
     userEvent.click(buttonElement)
 
     // Assert
